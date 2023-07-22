@@ -12,10 +12,10 @@ function editDepartment(){
                         let headScripts = Array.from(doc.querySelectorAll('script'));
 
                         for (let i in headStyles)
-                            document.head.append(headStyles[i]);
+                            document.head.appendChild(headStyles[i]);
 
                         for (let i in headScripts)
-                            document.head.append(headScripts[i]);
+                            document.head.appendChild(headScripts[i]);
                     }
 
                     window.editJSEnabled=1;
