@@ -17,7 +17,21 @@ class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
             []
         );
 
-        $APPLICATION->ShowHead();
+        $content = ob_get_clean();
+
+        $scripts = $APPLICATION->arHeadScripts;
+        $styles = $APPLICATION->sPath2css;
+
+        $strings = [];
+        foreach ($styles as $style)
+            $strings['styles'][]=$style;
+        foreach ($scripts as $script)
+            $strings['scripts'][]=$script;
+
+        return [
+            'strings' => $strings,
+            'content' => $content,
+        ];
     }
 
     function defineDepartmentInfo(){
