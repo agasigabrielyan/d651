@@ -2,8 +2,7 @@
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 
 use Bitrix\Main\Engine\Contract\Controllerable,
-    Bitrix\Main\Loader,
-    Gpi\Workproject\Orm;
+    Bitrix\Main\Loader;
 
 class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
     function configureActions(){}
@@ -35,18 +34,19 @@ class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
 
     function defineDepartmentInfo(){
 
+
         $this->arResult['DEPARTMENT'] = \Bitrix\Main\SiteTable::getList([
             'select' => [
                 '*',
-                //'D_' => 'DEPARTMENT.*'
+                'D_' => 'DEPARTMENT.*',
             ],
             'filter' => ['LID' => SITE_ID],
-            /*'runtime' => [
+            'runtime' => [
                 'DEPARTMENT' => [
-                    'data_type' => 'Gpi\Workproject\Orm\DepartmentTable',
-                    'reference' => ['this.LID' => 'ref.SITE_ID'],
+                    'data_type' => "\Bitrix\Iblock\SectionTable",
+                    'reference' => ['this.LID' => 'ref.XML_ID'],
                 ]
-            ]*/
+            ]
         ])->fetch();
 
     }
@@ -61,8 +61,8 @@ class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
 
     public function executeComponent() {
 
-        //if(!Loader::IncludeModule('gpi.workproject'))
-        //    return;
+        if(!Loader::IncludeModule('iblock'))
+            return;
 
         $template = $this->getTemplateName();
         switch ($template){
@@ -79,7 +79,7 @@ class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
                 $this->defineDepartmentInfo();
                 break;
         }
-        
+
 
         $this->includeExtensions();
         $this->IncludeComponentTemplate();
