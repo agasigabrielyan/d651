@@ -25,7 +25,7 @@ class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
         $strings = [];
         foreach ($styles as $style)
             $strings['styles'][]=$style;
-        foreach ($scripts as $script)
+        foreach (array_reverse($scripts) as $script)
             $strings['scripts'][]=$script;
 
         return [
