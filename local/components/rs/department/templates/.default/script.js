@@ -6,16 +6,9 @@ function editDepartment(){
                     mode: 'class',
                 }).then(function(response){
                     if(!window.editJSEnabled){
-                        for(let i in response.data.strings.styles)
-                            document.head.append(BX.create({
-                                tag: 'link',
-                                attrs: {type:'text/css', rel:'stylesheet', href: response.data.strings.styles[i]}
-                            }))
-                        for(let i in response.data.strings.scripts)
-                            document.head.append(BX.create({
-                                tag: 'script',
-                                attrs: {type:'text/javascript', src: response.data.strings.scripts[i]}
-                            }))
+                        let parser = new DOMParser();
+                        let doc = parser.parseFromString(response.data.strings, 'text/html');
+                        console.log(doc);
                     }
 
                     window.editJSEnabled=1;

@@ -21,11 +21,11 @@ class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
 
         $styles = $APPLICATION->sPath2css;
 
-        $strings = [];
+        $strings = '';
         foreach ($styles as $style)
             $strings.="<link type='text/css' rel='stylesheet' href='$style'>";
 
-        $scripts=$APPLICATION->GetHeadScripts();
+        $strings=$strings.$APPLICATION->GetHeadScripts();
 
         return [
             'strings' => $strings,
