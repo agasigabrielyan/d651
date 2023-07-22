@@ -1,0 +1,32 @@
+.control{
+    margin: 20px 0;
+}
+
+.control .ui-btn-sm{
+    margin-left: auto;
+    display: table;
+    margin-top: 0;
+}
+
+.task-list {
+    width: 100%;
+}
+
+[data-type=CUSTOM_ENTITY] .ui-tag-selector-outer-container{
+    width: 0;
+    height: 0;
+    border: 0;
+    overflow: visible;
+    position: static;
+}
+[data-type=CUSTOM_ENTITY] .ui-tag-selector-item,
+[data-type=CUSTOM_ENTITY] .ui-tag-selector-container,
+[data-type=CUSTOM_ENTITY] .ui-tag-selector-items{
+    position: static;
+}
+
+[data-type=CUSTOM_ENTITY] .ui-tag-selector-add-button{
+    position: absolute;
+    top: -5px;
+    right: 0;
+}

@@ -1,0 +1,9 @@
+.activity_direction .poisk-container input {
+    background: #fff;
+    color: #9fa4b6!important;
+    border-bottom: 2px solid #137fc4 !important;
+}
+
+.activity_direction .poisk-container .search-icon .search-path {
+    stroke: #5589aa;
+}

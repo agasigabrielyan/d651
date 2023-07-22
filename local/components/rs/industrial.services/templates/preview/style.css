@@ -1,0 +1,139 @@
+.but-block {
+    width: 130rem;
+    display: block;
+    text-decoration: none;
+    line-height: 31rem;
+    border-radius: 5rem;
+    border: 2rem solid #0079C2;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14rem;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    background-color: #1f91d7;
+}
+
+.but-block:hover {
+    background-color: #0079C2;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.all-system {
+    display: flex;
+    margin-left: -5rem;
+    margin-right: -5rem;
+}
+
+.one-system {
+    margin: 0 5rem;
+    border-radius: 5rem;
+    background: #ffffff;
+    width: calc(16.654% - 10rem);
+    height: 165rem;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.one-system a {
+    display: block;
+    padding: 10rem;
+    padding-bottom: 9rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #003f9c;
+}
+
+.pic-name-system {
+    display: flex;
+    align-items: center;
+}
+
+.pic-system {
+    background: #f5faff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    width: 55rem;
+    height: 55rem;
+    margin-bottom: 10rem;
+    margin-right: 15rem;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.name-system {
+    font-size: 16rem;
+    line-height: 20rem;
+}
+
+.anons-system {
+    color: #757575;
+    font-size: 15rem;
+    line-height: 20rem;
+    letter-spacing: 0.4rem;
+}
+
+.one-system:hover {
+    transform: translateY(-5rem);
+    background: #0079c2;
+}
+
+.one-system:hover .name-system, .one-system:hover .anons-system {
+    color: #ffffff;
+}
+
+.digital-services{
+    margin-bottom: 20px;
+}
+
+.digital-services .one-system:nth-child(1) .pic-system {
+    background: rgba(56, 134, 124, 0.2);
+}
+
+.digital-services .one-system:nth-child(2) .pic-system {
+    background: #C1E1FF;
+}
+
+.digital-services .one-system:nth-child(3) .pic-system {
+    background: #DFEFFA;
+}
+
+.digital-services .one-system:nth-child(4) .pic-system {
+    background: #F1EBFB;
+}
+
+.digital-services .one-system:nth-child(5) .pic-system {
+    background: #FFEFF3;
+}
+
+.digital-services .one-system:nth-child(6) .pic-system {
+    background: #FFD3D3;
+}
+
+.one-system:hover .pic-system {
+    background: #ffffff !important;
+}
+
+.zag-block h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 20rem;
+    line-height: 25rem;
+    letter-spacing: 0.25rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.zag-but {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 9rem;
+    align-items: center;
+}

@@ -1,0 +1,55 @@
+.favorites{
+    padding: 11px 0px 5px 9px;
+}
+.favorites-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.favorites-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 8px;
+    background: linear-gradient(110.72deg, #ffffff 2.9%, #8ed76d 100%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    width: 257px;
+    height: 154px;
+}
+.favorites-item p{
+    margin: 0;
+}
+.favorites-item:nth-child(2) {
+    background: linear-gradient(110.72deg, #ffffff 2.9%, #5db0fd 100%);
+}
+.favorites-item:nth-child(3) {
+    background: linear-gradient(110.72deg, #ffffff 2.9%, #f2e953 100%);
+}
+.favorites-item:nth-child(5) {
+    background: linear-gradient(110.72deg, #ffffff 2.9%, #5db0fd 100%);
+}
+.favorites-item:nth-child(6) {
+    background: linear-gradient(110.72deg, #ffffff 2.9%, #f2e953 100%);
+}
+.service-text, .favorites-text, .add_fav, .del_fav{
+    text-decoration: none;
+}
+.del_fav::before{
+    content: url("images/bookmark-selected.png");
+    margin-right: 5px;
+}
+.add_fav::before{
+    content: url("images/bookmark-unselected.png");
+    margin-right: 5px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.gzpm-layout .search-form .poisk-container-main input {
+    background-color: transparent!important; color: #000!important;
+}

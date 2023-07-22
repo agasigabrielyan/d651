@@ -1,0 +1,30 @@
+.department_widget .info{
+    background-color: #0079C2;
+    padding: 11rem 17rem;
+    border-radius: 13rem;
+    width: 100%;
+}
+
+.department_widget .info .name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46rem;
+    line-height: 41rem;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 13rem;
+    text-decoration: none;
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.department_widget .info .description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17rem;
+    line-height: 30rem;
+    color: #fff;
+    text-align: left;
+}

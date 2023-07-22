@@ -1,0 +1,766 @@
+/** общие настройки для виджетова **/
+.gridstack-main-class {
+    box-shadow: 0 0 3rem purple;
+    width: 100%;
+    height: 100%;
+}
+.widget {
+    height: 100%;
+    text-align: left;
+    box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+.widget__header {
+    color: #fff;
+    background-color: #0079C2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25rem 0 25rem;
+    height: 50rem;
+}
+.widget__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22rem;
+    line-height: 26rem;
+}
+.widget__link {
+    padding-right: 43rem;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+.widget__link:hover, .widget__link:active, .widget__link:visited, .widget__link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.widget__link:after {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../images/all-employees-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem 15rem;
+    background-position: 11rem 8rem;
+    display: inline-block;
+    margin-left: 15rem;
+    background-color: #80BCE0;
+    padding: 15rem;
+    border-radius: 50%;
+    top: -13rem;
+
+}
+.widget__link:hover:after {
+    animation: horizontal-shaking 0.75s linear;
+}
+.widget__body {
+    position: relative;
+    padding: 20rem 25rem 25rem 25rem;
+    background: rgba(255, 255, 255, 0.7);
+    height: calc(100% - 50rem);
+}
+.grid-stack-item__under-resizing .widget__body {
+    opacity: 0;
+}
+
+
+/** настройки виджета с внешним отображением как Совместная работа **/
+.collaborate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+.collaborate__cell {
+    background: #FFFFFF;
+    box-shadow: 0 0 5rem rgba(0, 95, 173, 0.2);
+    border-radius: 10rem;
+    padding: 13rem 21rem;
+}
+.grid-stack-item__small .collaborate__cell {
+    width: 100%;
+    display: none;
+}
+.grid-stack-item__small .collaborate__cell:first-child {
+    display: block;
+}
+.grid-stack-item__long .collaborate__cell {
+    width: calc(50% - 10rem);
+}
+.grid-stack-item__high .collaborate__cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grid-stack-item__high .collaborate__cell:first-child {
+    margin-bottom: 10rem;
+}
+.collaborate__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 21rem;
+    margin-bottom: 7rem;
+    color: #000;
+    position: relative;
+}
+.collaborate__item{
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+.collaborate__item span {
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #80BCE0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-right: 10rem;
+    text-align: center;
+    padding-top: 8rem;
+}
+.collaborate__item div {
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #80BCE0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-right: 10rem;
+    text-align: center;
+    display: flex;
+}
+.collaborate__star {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../images/Star.svg);
+    width: 18rem;
+    height: 19rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+/** настройки виджета с внешним отображением как мои услуги **/
+.my-services{
+    display: flex;
+    justify-content: space-between;
+}
+.my-services ul {
+    width: calc(33.3% - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-right: 10rem;
+}
+.my-services ul:last-child {
+    margin-right: 0;
+}
+.my-services__item{
+    background: #FFFFFF;
+    box-shadow: 0 0 5rem rgba(0, 95, 173, 0.2);
+    border-radius: 10rem;
+    height: 50rem;
+    margin-bottom: 10rem;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    padding: 10rem;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.my-services__item span {
+    display: block;
+}
+.my-services__item a:hover, .my-services__item a:active, .my-services__item a:visited, .my-services__item a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.my-services__name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 16rem;
+    color: #333333;
+}
+.my-services__desc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 18rem;
+    color: #828282;
+}
+.grid-stack-item__small .my-services ul:not(:first-child) {
+    display: none;
+}
+.grid-stack-item__small .my-services ul:first-child {
+    margin-right: 0;
+}
+.grid-stack-item__high .my-services {
+    flex-direction: column;
+    height: 100%;
+}
+.grid-stack-item__high .my-services ul {
+    width: 100%;
+}
+.grid-stack-item__high .my-services ul:nth-child(3n) {
+    display: none;
+}
+
+
+
+/** настройки виджета цифровых сервисов **/
+.common-widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.common-widget__item{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 32rem;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+.common-widget__item span {
+    display: inline-block;
+    width: 30rem;
+    height: 30rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 32rem;
+    background-color: #fff;
+    color: #0079C2;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    margin-right: 10rem;
+}
+
+
+/** настройки виджета новостей **/
+.my-news {
+
+}
+.my-news__search {
+    width: 100%;
+    margin-bottom: 20rem;
+}
+.my-news__search input {
+    width: 100%;
+    height: 40rem;
+    border-radius: 20rem;
+    background-image:url(../images/new-search.svg);
+    background-repeat: no-repeat;
+    background-position: 15rem 50%;
+    outline: none;
+    padding-left: 40rem;
+    font-size: 16rem;
+    color: #BDBDBD;
+    border: 1rem solid #c0c0c0;
+}
+.my-news__search input::placeholder {
+    color: #BDBDBD;
+}
+.my-news__filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+.my-news__filter-item {
+    flex-grow: 1;
+    height: 20rem;
+    background-color: #b3b3b3;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10rem;
+    margin-right: 10rem;
+    border-radius: 100rem;
+    position: relative;
+    padding-right: 25rem;
+    padding-left: 25rem;
+}
+.my-news__filter-item:active {
+    top: 1rem;
+    left: 1rem;
+}
+.grid-stack-item__small .my-news__filter {
+    display: none;
+}
+.my-news__list {
+
+}
+.my-news__list ul li {
+    display: flex;
+    margin-bottom: 15rem;
+}
+.grid-stack-item__small .my-news__list ul li {
+    opacity: 0;
+}
+.grid-stack-item__small .my-news__list ul li:first-child {
+    opacity: 1;
+}
+.my-news__image {
+
+}
+.my-news__image img {
+    width: 100%;
+    border-radius: 10rem;
+}
+.my-news__info {
+    padding-left: 10rem;
+}
+.my-news__top {
+    color: #828282;
+    display: flex;
+    justify-content: space-between;
+}
+.my-news__watch {
+    position: relative;
+    padding-left: 5rem;
+    margin-right: 15rem;
+}
+.my-news__like { position: relative; padding-left: 5rem;}
+.my-news__name {
+    color: #2A2A30;
+}
+.my-news__tags {
+    color: #828282;
+}
+
+/** настройки виджета автобусов **/
+.buses {
+    height: 100%;
+    overflow: hidden;
+}
+.buses__title {
+    color: #828282;
+    font-size: 20rem;
+    margin-bottom: 20rem;
+}
+.buses__stations {
+    overflow-y: scroll;
+    height: 100%;
+}
+.buses__stations {
+    overflow: auto; /* Ensures scrollbars appear when needed */
+    scrollbar-width: thin; /* Width of the scrollbar (optional) */
+}
+.buses__stations::-webkit-scrollbar {
+    width: 6rem; /* Width of the scrollbar track */
+}
+.buses__stations::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the scrollbar track */
+    border-radius: 4rem;
+}
+.buses__stations::-webkit-scrollbar-thumb {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb */
+    border-radius: 4rem;
+}
+.buses__stations::-webkit-scrollbar-thumb:hover {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb on hover */
+}
+.buses__table {
+    width: 100%;
+}
+.buses__table td {
+    font-size: 16rem;
+    color: #333333;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border-bottom: 1rem solid rgba(130,130,130,.5)
+}
+.buses__table tr:first-child td {
+    border-top: 1rem solid rgba(130,130,130,.5)
+}
+.buses__table td:nth-child(2n) {
+    font-weight: bold;
+}
+.buses__table td:nth-child(3n) {
+    color: #828282;
+    font-size: 12rem;
+}
+
+/** настройка моих запросов **/
+.my-request {
+    display: flex;
+    height: 100%;
+}
+.my-request__wrapper {
+    width: 50%;
+    margin-bottom: 20rem;
+}
+.my-request__wrapper:first-child {
+    margin-right: 20rem;
+}
+.my-request__textarea {
+
+}
+.my-request__textarea textarea {
+    border:1rem solid #BDBDBD;
+    height: 91rem;
+    padding: 15rem 10rem;
+    overflow: hidden;
+    resize: none;
+    border-radius: 10rem;
+    width: 100%;
+}
+.my-request__file-area {
+    display: flex;
+    margin-bottom: 10rem;
+}
+.my-request__file {
+    position: relative;
+    width: 60%;
+    background-color:#fff;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/screpka.svg);
+    background-position: 15rem 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1rem solid #BDBDBD;
+    margin-right: 10rem;
+}
+.my-request__file:before {
+    content: "Приложите файл";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 40rem;
+    color: #BDBDBD;
+    cursor: pointer;
+}
+.my-request__file input {
+    opacity: 0;
+}
+.my-request__file input:before {
+    content: "Руддщ";
+}
+.my-request__type {
+    border: 1rem solid #bdbdbd;
+    color: #bdbdbd;
+    font-size: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20rem;
+}
+.my-request__send-area {
+    display: flex;
+}
+.my-request__send {
+    width: 40%;
+    font-size: 16rem;
+    color: #2A2A30;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+}
+.my-request__req-type {
+    width: 60%;
+}
+.my-request__req-type ul{
+    display: flex;
+    background-color: #828282;
+    width: 100%;
+    border-radius: 100rem;
+    height: 30rem;
+}
+.my-request__req-type ul li {
+    color:#fff;
+    font-size: 16rem;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.my-request__req-type ul li.active {
+    background-color: #bdbdbd;
+    border-radius: 100rem;
+}
+.my-request__req-type {
+
+}
+.my-request__all {
+    height: 100%;
+    overflow-y: scroll;
+}
+.my-request__all::-webkit-scrollbar {
+    width: 6rem; /* Width of the scrollbar track */
+}
+.my-request__all::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the scrollbar track */
+    border-radius: 4rem;
+}
+.my-request__all::-webkit-scrollbar-thumb {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb */
+    border-radius: 4rem;
+}
+.my-request__all::-webkit-scrollbar-thumb:hover {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb on hover */
+}
+
+.my-request__single {
+
+}
+.my-request__code {display: flex;}
+.my-request__code span:first-child{
+    color: #2A2A30;
+    font-weight: bold;
+    margin-right: 20rem;
+}
+.my-request__code span:nth-child(2n){
+    color: #0079C2;
+    border: 1rem solid #0079C2;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    border-radius: 100rem;
+}
+.my-request__text {
+    color: #828282;
+    font-size: 16rem;
+    padding-right: 15rem;
+    margin-bottom: 15rem;
+}
+.my-request__code span.my-request_done {
+    color: #05b958;
+    border: 1rem solid #05b958;
+}
+.grid-stack-item__high .my-request, .grid-stack-item__small .my-request {
+    display: block;
+}
+.grid-stack-item__high .my-request__all, .grid-stack-item__small .my-request__all {
+    height: 260rem;
+}
+.grid-stack-item__high .my-request .my-request__wrapper, .grid-stack-item__small .my-request .my-request__wrapper {
+    width: 100%;
+}
+.grid-stack-item__small .my-request .my-request__wrapper:last-child {
+    display: none;
+}
+
+
+/** настройки для виджета календарь **/
+.my-calendar {
+    position: relative;
+}
+.my-calendar__search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+.my-calendar__search .my-news__search {
+    margin-bottom: 0;
+    width: 70%;
+    margin-right: 20rem;
+}
+.my-calendar__icons {
+    display: flex;
+    background-color: #0079c2;
+    color: #fff;
+    border-radius: 100rem;
+    width: 30%;
+    height: 100%;
+    min-height: 38rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.my-calendar__icon {
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-calendar__icon_active {
+    background-color: #80bce0;
+    border-radius: 50%;
+}
+
+.my-calendar__area-wrapper {
+    position: relative;
+    height: 350rem;
+}
+.my-calendar__area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.my-calendar__area::-webkit-scrollbar {
+    width: 6rem; /* Width of the scrollbar track */
+}
+.my-calendar__area::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the scrollbar track */
+    border-radius: 4rem;
+}
+.my-calendar__area::-webkit-scrollbar-thumb {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb */
+    border-radius: 4rem;
+}
+.my-calendar__area::-webkit-scrollbar-thumb:hover {
+    background-color: #C3C3C3; /* Color of the scrollbar thumb on hover */
+}
+.my-calendar__area_active {
+    z-index: 2;
+}
+.my-calendar__area_events {
+    overflow-y: scroll;
+}
+.my-calendar__area_calendar {
+    overflow: hidden;
+}
+
+.my-calendar__calendar {}
+.my-calendar__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18rem;
+    color: #0079C2;
+}
+.my-calendar__calendar button {
+    border: 1rem solid transparent;
+    background-color: transparent;
+    width: 25rem;
+}
+.my-calendar__digits {}
+.my-calendar__digits table {
+    width: 100%;
+}
+.my-calendar__digits tr {}
+.my-calendar__digits td {
+    height: 40rem;
+    width: 40rem;
+    margin-bottom: 10rem;
+}
+
+.my-calendar__calendar thead td {
+    font-weight: bold;
+}
+.my-calendar__calendar td span{
+    font-size: 16rem;
+    color: #333;
+    border: 1rem solid transparent;
+    width: 40rem;
+    height: 40rem;
+    text-align: center;
+    border-radius: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.my-calendar__calendar .my-calendar__event_blue span{
+    background-color: blue;
+    color: #fff;
+}
+.my-calendar__calendar .my-calendar__event_outline span{
+    border: 1rem solid #80BCE0;
+}
+.my-calendar__calendar .my-calendar__event_vacation span{
+    color: red;
+}
+
+.my-events {}
+.my-events__date {
+    font-size: 18rem;
+    color: #626262;
+}
+.my-events__list {}
+.my-events__event {}
+.my-events__event table {
+    width: 100%;
+}
+.my-events__event tr {}
+.my-events__event tr td{
+    height: 56rem;
+    font-size: 16rem;
+}
+.my-events__event td:first-child {
+    color: #2A2A30;
+}
+.my-events__event td:nth-child(2n) {
+    color: #2A2A30;
+}
+.my-events__event tr td:nth-child(2n) {
+    color: #828282;
+}
+.my-calendar__add {
+    position: absolute;
+    top: calc(100% + 5rem);
+    width: 100%;
+}
+.my-calendar__button {
+    background-color: #80BCE0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+    border-radius: 100rem;
+}
+.event-title {
+    color: #2A2A30;
+    font-weight: bold;
+}
+
+
+.grid-stack-item__small .my-calendar__area-wrapper {
+    position: relative;
+    height: 80rem;
+}
+.grid-stack-item__small .my-calendar__add {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    top: 0;
+    right: 0;
+}
+.grid-stack-item__small .my-calendar__add span {
+    display: none;
+}
+.grid-stack-item__small .my-calendar__icons {
+    display: none;
+}
+.grid-stack-item__small .my-calendar__search .my-news__search {
+    width: 80%;
+}
+
+
+

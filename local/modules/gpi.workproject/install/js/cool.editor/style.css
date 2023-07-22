@@ -1,0 +1,95 @@
+[cool-edit-here]{
+    height: 0px;
+    position: absolute;
+    display: flex!important;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: end;
+    z-index: 2;
+    transition-duration: 0.3s;
+}
+
+[cool-edit-here].show{
+    /*opacity: 1;*/
+}
+
+[cool-edit-here] .icon{
+    padding: 2px;
+    background: #9fd0f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transform: scale(1);
+    width: 30px;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    opacity: 0.2;
+}
+
+[cool-edit-here] .icon.l-btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+}
+
+.l-btn{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.l-btn span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-right: 6px;
+    background: #1523466e;
+    border-radius: 3px;
+}
+
+[cool-edit-here] .l-btn:hover span{
+
+}
+
+[cool-edit-here] .l-btn span:before{
+    content:'';
+    position: absolute;
+    inset: 3px 2px;
+    filter: blur(2px);
+}
+
+[cool-edit-here] .l-btn b{
+    z-index: 10;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #99d9ff!important;
+}
+[cool-edit-here] .l-btn:hover b{
+    color: #ffffff !important;
+}
+
+[cool-edit-here] .icon:hover{
+    opacity: 1;
+}
+
+[cool-edit-here] .icon svg {
+    width: 22px;
+    height: 19px;
+}
+

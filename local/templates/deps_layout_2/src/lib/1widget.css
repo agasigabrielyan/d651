@@ -1,0 +1,307 @@
+/** общие настройки для виджетова **/
+.gridstack-main-class {
+    box-shadow: 0 0 3rem purple;
+    width: 100%;
+    height: 100%;
+}
+.widget {
+    height: 100%;
+    text-align: left;
+    box-shadow: 0 4rem 4rem rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+.widget__header {
+    color: #fff;
+    background-color: #0079C2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25rem 0 25rem;
+    height: 50rem;
+}
+.widget__name {
+    padding-right: 29rem;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17rem;
+}
+.widget__link {
+    padding-right: 43rem;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20rem;
+}
+.widget__link:hover, .widget__link:active, .widget__link:visited, .widget__link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+.widget__link:after {
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(../images/all-employees-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 10rem 15rem;
+    background-position: 11rem 8rem;
+    display: inline-block;
+    margin-left: 15rem;
+    background-color: #80BCE0;
+    padding: 15rem;
+    border-radius: 50%;
+    top: -13rem;
+
+}
+.widget__link:hover:after {
+    animation: horizontal-shaking 0.75s linear;
+}
+.widget__body {
+    position: relative;
+    padding: 20rem 25rem 25rem 25rem;
+    background: rgba(255, 255, 255, 0.7);
+    height: calc(100% - 50rem);
+}
+.grid-stack-item__under-resizing .widget__body {
+    opacity: 0;
+}
+
+
+/** настройки виджета с внешним отображением как Совместная работа **/
+.collaborate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+.collaborate__cell {
+    background: #FFFFFF;
+    box-shadow: 0 0 5rem rgba(0, 95, 173, 0.2);
+    border-radius: 10rem;
+    padding: 13rem 21rem;
+}
+.grid-stack-item__small .collaborate__cell {
+    width: 100%;
+    display: none;
+}
+.grid-stack-item__small .collaborate__cell:first-child {
+    display: block;
+}
+.grid-stack-item__long .collaborate__cell {
+    width: calc(50% - 10rem);
+}
+.grid-stack-item__high .collaborate__cell {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grid-stack-item__high .collaborate__cell:first-child {
+    margin-bottom: 10rem;
+}
+.collaborate__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 21rem;
+    margin-bottom: 7rem;
+    color: #000;
+    position: relative;
+}
+.collaborate__item{
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+.collaborate__item span {
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #80BCE0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-right: 10rem;
+    text-align: center;
+    padding-top: 8rem;
+}
+.collaborate__item div {
+    width: 30rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #80BCE0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-right: 10rem;
+    text-align: center;
+    display: flex;
+}
+.collaborate__star {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../images/Star.svg);
+    width: 18rem;
+    height: 19rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+/** настройки виджета с внешним отображением как мои услуги **/
+.my-services{
+    display: flex;
+    justify-content: space-between;
+}
+.my-services ul {
+    width: calc(33.3% - 10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-right: 10rem;
+}
+.my-services ul:last-child {
+    margin-right: 0;
+}
+.my-services__item{
+    background: #FFFFFF;
+    box-shadow: 0 0 5rem rgba(0, 95, 173, 0.2);
+    border-radius: 10rem;
+    height: 50rem;
+    margin-bottom: 10rem;
+    flex-grow: 1;
+    align-items: center;
+    display: flex;
+    padding: 10rem;
+    background-image: url(../images/note.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+.my-services__item span {
+    display: block;
+}
+.my-services__item a:hover, .my-services__item a:active, .my-services__item a:visited, .my-services__item a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.my-services__name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 16rem;
+    color: #333333;
+}
+.my-services__desc{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 18rem;
+    color: #828282;
+}
+.grid-stack-item__small .my-services ul:not(:first-child) {
+    display: none;
+}
+.grid-stack-item__small .my-services ul:first-child {
+    margin-right: 0;
+}
+.grid-stack-item__high .my-services {
+    flex-direction: column;
+    height: 100%;
+}
+.grid-stack-item__high .my-services ul {
+    width: 100%;
+}
+.grid-stack-item__high .my-services ul:nth-child(3n) {
+    display: none;
+}
+
+
+
+/** настройки виджета цифровых сервисов **/
+.common-widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.common-widget__item{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16rem;
+    line-height: 32rem;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+.common-widget__item span {
+    display: inline-block;
+    width: 30rem;
+    height: 30rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 32rem;
+    background-color: #fff;
+    color: #0079C2;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    margin-right: 10rem;
+}
+
+
+/** настройки виджета новостей **/
+.my-news {
+
+}
+.my-news__search {
+    width: 100%;
+}
+.my-news__search input {
+    width: 100%;
+}
+.my-news__filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-news__filter-item {
+
+}
+.my-news__list {
+    
+}
+.my-news__list ul li {
+    display: flex;
+}
+.my-news__image {
+
+}
+.my-news__info {
+
+}
+.my-news__top {
+
+}
+.my-news__name {
+
+}
+.my-news__tags {
+
+}
+
+
+
+

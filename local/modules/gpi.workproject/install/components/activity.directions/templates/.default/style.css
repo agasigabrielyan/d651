@@ -1,0 +1,19 @@
+.direction-text .direction-link{
+    color: #137fc4!important;
+}
+
+.activity_direction .item-title .actions svg{
+    width: 31px;
+    height: 31px;
+    margin-top: 0px;
+}
+
+.ads-container .ui-btn.ui-btn-icon-setting.ui-btn-primary{
+    display: none;
+}
+
+[cool-edit-here] .l-btn *,
+[cool-edit-here] .l-btn{
+    fill: #99d9ff;
+    stroke:#99d9ff;
+}

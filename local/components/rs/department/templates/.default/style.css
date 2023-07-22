@@ -1,0 +1,45 @@
+.department-card {
+    background-color: #fff;
+    color: #003f73;
+    padding: 20rem;
+    border-radius: 10rem;
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.department-title {
+    font-size: 24rem;
+    font-weight: bold;
+    margin-bottom: 10rem;
+}
+
+.department-description {
+    font-size: 16rem;
+    margin-bottom: 10rem;
+}
+
+.department-info {
+    margin-bottom: 10rem;
+}
+
+.department-info span {
+    font-weight: bold;
+}
+
+.department-card .ui-btn{
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+    width: 37rem!important;
+    height: 37rem!important;
+    border-radius: 10rem;
+}
+
+.department-card .ui-btn:after{
+    width: 37rem!important;
+    height: 37rem!important;
+    margin: -19rem 0 0 -19rem!important;
+    background-size: 38rem;
+}

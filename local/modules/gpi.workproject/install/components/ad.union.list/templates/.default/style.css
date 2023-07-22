@@ -1,0 +1,188 @@
+.ads-container>.ui-btn{
+    margin-left: 10px;
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+
+.ads-container .ads-list{
+    display: flex;
+    gap:10px;
+}
+
+.ads-container .ads-list .label:after{
+    display: none;
+}
+
+.ads-container .ads-list .ad{
+    position: relative;
+    width: calc((100%/3) - -12px);
+}
+
+.ads-list .ad .actions{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 8px;
+    display: flex;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.ads-list .ad:hover .actions{
+    opacity:1;
+}
+
+.ads-list .ad .actions>div{
+    padding: 2px;
+    background: #9fd0f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.ads-list .ad .actions>div:hover{
+    transform: scale(1.1);
+}
+
+.ads-list .ad .actions svg{
+    width: 22px;
+    height: 19px;
+}
+
+.ads-list .ad .includes{
+    padding: 0 5px;
+}
+
+.ads-list .ad .includes .label,
+.ads-list .ad .includes a{
+    color: #303335!important;
+}
+
+
+
+
+.direction-ads .ads-list{
+    height: 100%;
+}
+
+.ads-list .ad{
+    position: relative;
+    border: 1px solid #e7e1e1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ads-container .ads-list .ad{
+    height: initial;
+}
+
+.ads-list .ad img{
+    width: 100%;
+    height: auto;
+}
+
+.ads-list .ad .l-btns{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 8px;
+    display: flex;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.ads-list .ad:hover .l-btns{
+    opacity:1;
+}
+
+.ads-list .ad .l-btns>div:hover{
+    transform: scale(1.1);
+}
+
+.ads-list .ad .preview{
+    width: 100%;
+    height: auto;
+}
+
+.ads-list .ad .content{
+    padding: 15px 18px 30px;
+    font-family: helvetica;
+    background: #fff;
+    flex-grow: 1;
+}
+
+.ads-list .content .title{
+    color: #137fc4!important;
+    font-size: 20px!important;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.ads-list .content .description{
+    font-size: 18px!important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    white-space: normal;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    color: #212529!important;
+}
+
+.ads-list .foot{
+    padding: 0px 18px;
+    background: aliceblue;
+    font-size: 16px;
+    color: #5e5e5e!important;
+    line-height: 33px;
+    border-top: 1px solid #e7e1e1;
+}
+
+.ads-container .poisk-container{
+    position: relative;
+}
+
+.ads-container .poisk-container .search-icon{
+    position: absolute;
+    width: 21px;
+    top: 3.3px;
+    right: 4px;
+    fill: #fff;
+}
+
+.ads-container .poisk-container .search-icon .search-path{
+    stroke: #fff;
+}
+
+.ads-container .poisk-container input{
+    width: 265px;
+    height: 33px;
+    background: transparent;
+    border: 1px solid #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: end;
+    outline: none;
+    margin-left: auto;
+    padding: 3px 12px;
+    display: block;
+    font-family: 'HeliosCondRegular';
+    outline: none;
+    margin-left: auto;
+    display: block;
+    padding-right: 34px!important;
+    color: #fff!important;
+}
+
+.ads-container .poisk-container .search-icon .search-path {
+    stroke: #137fc4;
+}
