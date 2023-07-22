@@ -1,0 +1,17 @@
+.anim-menu-gb .poisk-container .search-icon .search-path{
+    stroke: #137fc4;
+}
+
+.anim-menu-gb .poisk-container input{
+    border-bottom: 2px solid #137fc4!important;
+    background: #ffffff;
+    color: #9fa4b6!important;
+}
+
+body .direction-text .direction-label{
+    color: #212529!important;
+}
+
+body .row .direction-text>.direction-link{
+    color: #137fc4!important;
+}

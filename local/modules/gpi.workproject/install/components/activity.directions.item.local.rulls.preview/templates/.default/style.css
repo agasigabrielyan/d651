@@ -1,0 +1,26 @@
+.normatives-list a{
+	color: #fff!important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	display: block;
+}
+
+.normatives-list ul{
+	padding-left: 0!important;
+}
+
+.normatives-list li{
+	list-style: none;
+}
+
+.normatives-list [data-isnew='1']::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #5dd761;
+    border-radius: 50%;
+    left: 5px;
+    top: 8px;
+}

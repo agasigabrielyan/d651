@@ -1,0 +1,9 @@
+.light-btn {
+    background: #c6edfe;
+    color: #666!important;
+}
+
+.light-btn:hover {
+    background: #6edaff;
+    color: #fff!important;
+}

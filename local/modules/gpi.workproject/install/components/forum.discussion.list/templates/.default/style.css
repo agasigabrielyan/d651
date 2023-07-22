@@ -1,0 +1,24 @@
+.theme-content .ui-btn-icon-add{
+    display:table;
+    margin-left: auto;
+    position: sticky;
+    top: 10px;
+}
+
+.block-title-second.headhead {
+    margin: 15px 0 18px;
+    width: 100%;
+    background: rgb(177 200 239);
+}
+
+.block-title-second.headhead span {
+    display: block;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.5px !important;
+    line-height: 24px;
+    color: #ffffff;
+    padding: 3px 0px 7px 22px;
+    min-height: 32px;
+}

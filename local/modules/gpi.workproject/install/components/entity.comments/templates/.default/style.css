@@ -1,0 +1,103 @@
+.entity-comments{
+    margin-top: 20px;
+    max-width: 600px;
+    border-radius: 7px;
+    padding: 19px 0px;
+    margin-bottom: 60px;
+    bbox-shadow: rgba(50, 50, 93, 0.25) 0px 50px 50px -20px, rgba(0, 0, 0, 0.3) 0px 30px 40px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.entity-comments .inputFiles{
+    float: right;
+}
+
+.comment-info{
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 14px;
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.comment-info .date, .comment-info .author {
+    font-size: 15px;
+    color: #787878!important;
+}
+
+.comment-info .files{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    row-gap: 1px;
+}
+
+.comment{
+    position: relative;
+    display: table;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.comment .actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 8px;
+    display: flex;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.comment:hover>.actions {
+    opacity: 1;
+}
+
+.comment .actions>div {
+    padding: 1px;
+    background: #9fd0f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.comment .actions svg {
+    width: 22px;
+    height: 19px;
+}
+
+.entity-comments .comment-info,
+.entity-comments .ad-comment,
+.entity-comments .edit-comment{
+    max-height: 500px;
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+
+
+.entity-comments .hidden{
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+}
+
+div.bx-html-editor{
+    margin-bottom: 10px;
+}
+
+.title-second{
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 17.5px;
+    line-height: 24px;
+    min-height: 26px;
+    margin-bottom: 10px;
+    color: #464b52;
+}
+
+.new-comment{
+    position: sticky;
+    bottom: 5px;
+}
