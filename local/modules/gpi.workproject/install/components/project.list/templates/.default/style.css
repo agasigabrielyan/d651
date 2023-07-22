@@ -1,0 +1,12 @@
+.createProjectBtn{
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.left.ico{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

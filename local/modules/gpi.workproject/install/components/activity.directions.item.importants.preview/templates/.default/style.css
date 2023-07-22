@@ -1,0 +1,47 @@
+.rupors-list .rupor{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.desc-container{
+	position: relative;
+}
+
+.show-me.desc-container .description{
+	-webkit-line-clamp: 300;
+}
+
+.desc-container .description{
+	font-weight: 300;
+	font-size: 16px;
+	padding: 10px 15px !important;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	margin-bottom: 16px;
+	min-height: 71px;
+	transition-duration: 1s;
+	font-family: helvetica;
+	text-align: justify;
+}
+
+.back-cont{
+	position: relative;
+}
+
+.direction-importants{
+	display: flex;
+	flex-direction: column;
+}
+
+.importants-list{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.activity_direction .item.banner{
+	padding-bottom: 0px;
+}

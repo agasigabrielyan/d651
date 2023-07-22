@@ -1,0 +1,63 @@
+body .middleColumn.other {
+    background: #fff!important;
+}
+
+.middleColumn.other .block-title span, body .row .middleColumn.other * {
+    /color: #137fc4!important;/
+}
+
+.activity_direction .item-title, .activity_direction .item.events .item-title, .activity_direction .item.rupor-block .item-title, .activity_direction .item.banner .item-title{
+    background: #C8E9FF!important;
+    color: #212529;
+}
+
+.activity_direction li a:hover, .events-list:hover .title, .rupors-list .rupor:hover .name {
+    text-decoration: underline;
+    color: #137fc4!important;
+    cursor: pointer;
+}
+.activity_direction .item*{
+    color: #212529!important;
+}
+.activity_direction .actions .plus path{
+    fill: #fff;
+}
+body .direction-text .direction-label{
+    color: #212529!important;
+}
+
+.direction-text .direction-link{
+    color: #137fc4!important;
+}
+
+.rupors .event .title {
+    background: #fff9b9!important;
+}
+.rupors .event {
+    border: 2px solid #f3e554!important;
+}
+
+.banner .background-preview{
+    background-image: url(/media/lugbat.jpg);
+    box-shadow: 0 1px 4px #838181, -23px 0 20px -23px #838181, 23px 0 20px -23px #838181, 0 0 40px rgb(0 0 0 / 10%) inset;
+}
+
+.background-preview .preview-container {
+    background: #60afdda1 !important;
+}
+body .l-btns .l-btn b {
+    color: #3488ba !important;
+}
+
+.activity_direction .curators, .activity_direction .curators b, .block-title span , .item-title span{
+    color: #394248!important;
+}
+
+.activity_direction .poisk-container input {
+    background: #fff;
+    color: #9fa4b6!important;
+}
+
+.activity_direction .poisk-container .search-icon .search-path {
+    stroke: #5589aa;
+}

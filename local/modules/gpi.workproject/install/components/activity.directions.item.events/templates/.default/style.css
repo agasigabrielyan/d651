@@ -1,0 +1,117 @@
+.events-list{
+	display: flex;
+	gap:10px;
+}
+
+.events-list .event{
+	position: relative;
+	border: 1px solid #e7e1e1;
+	width: calc((100%/3) - -12px);
+}
+
+.events-list .event .l-btns{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	gap: 8px;
+	display: flex;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+
+.events-list .event:hover .l-btns{
+	opacity:1;
+}
+
+.events-list .event .l-btns>div:hover{
+	transform: scale(1.1);
+}
+
+.events-list .event .preview{
+	width: 100%;
+	height: auto;
+}
+
+.events-list .event .content{
+	padding: 15px 18px 30px;
+	font-family: helvetica;
+	background: #fff;
+}
+
+.events-list .content .title{
+	color: #137fc4;
+	font-size: 20px!important;
+	margin-bottom: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	white-space: normal;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.events-list .content .description{
+	font-size: 18px!important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	white-space: normal;
+	-webkit-line-clamp: 15;
+	-webkit-box-orient: vertical;
+}
+
+.events-list .foot{
+	padding: 0px 18px;
+	background: aliceblue;
+	font-size: 16px;
+	color: #5e5e5e;
+	line-height: 33px;
+	border-top: 1px solid #e7e1e1;
+}
+
+.rs_activity_direction_events  .poisk-container{
+	position: relative;
+}
+
+.rs_activity_direction_events  .poisk-container .search-icon {
+	position: absolute;
+	width: 21px;
+	top: 3.3px;
+	right: 4px;
+	fill: #fff;
+}
+
+.rs_activity_direction_events .poisk-container input {
+	width: 265px;
+	height: 33px;
+	background: transparent;
+	border: 1px solid #fff;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 14px;
+	text-align: end;
+	outline: none;
+	margin-left: auto;
+	padding: 3px 12px;
+	display: block;
+	font-family: 'HeliosCondRegular';
+	outline: none;
+	margin-left: auto;
+	display: block;
+	padding-right: 34px!important;
+	color: #fff!important;
+}
+
+.rs_activity_direction_events .poisk-container .search-icon {
+	position: absolute;
+	width: 21px;
+	top: 3.3px;
+	right: 4px;
+	fill: #fff;
+}
+
+.rs_activity_direction_events .search-icon .search-path {
+	stroke: #137fc4;
+}

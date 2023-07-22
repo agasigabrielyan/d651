@@ -1,0 +1,30 @@
+.activities{
+    margin-right: 55px;
+}
+
+.activity-direction-form{
+
+}
+
+.activity-direction-form label {
+    display: table-cell;
+    color: #00000087;
+    font-size: 17px;
+}
+
+.activity-direction-form  select, .activity-direction-form  input, .activity-direction-form  textarea {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 9px;
+    min-height: 30px;
+    max-width: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #c4c7cc;
+    border-radius: var(--ui-field-border-radius, 1px);
+    background-color: #fff;
+    color: #424956;
+    font: 15px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: 220ms all ease;
+    border-radius: 3px;
+}
