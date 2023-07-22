@@ -8,7 +8,14 @@ function editDepartment(){
                     if(!window.editJSEnabled){
                         let parser = new DOMParser();
                         let doc = parser.parseFromString(response.data.strings, 'text/html');
-                        console.log(doc);
+                        let headStyles = Array.from(doc.querySelectorAll('link'));
+                        let headScripts = Array.from(doc.querySelectorAll('script'));
+
+                        for (let i in headStyles)
+                            document.head.append(headStyles[i]);
+
+                        for (let i in headScripts)
+                            document.head.append(headScripts[i]);
                     }
 
                     window.editJSEnabled=1;
