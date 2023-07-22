@@ -19,14 +19,13 @@ class RSEntityStructure extends  \CBitrixComponent implements Controllerable{
 
         $content = ob_get_clean();
 
-        $scripts = $APPLICATION->arHeadScripts;
         $styles = $APPLICATION->sPath2css;
 
         $strings = [];
         foreach ($styles as $style)
-            $strings['styles'][]=$style;
-        foreach (array_reverse($scripts) as $script)
-            $strings['scripts'][]=$script;
+            $strings.="<link type='text/css' rel='stylesheet' href='$style'>";
+
+        $scripts=$APPLICATION->GetHeadScripts();
 
         return [
             'strings' => $strings,
