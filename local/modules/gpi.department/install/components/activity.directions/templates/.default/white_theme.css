@@ -1,0 +1,13 @@
+body .direction-text .direction-label{
+    color: #212529!important;
+}
+
+.direction-text .direction-link{
+    color: #137fc4!important;
+}
+
+[cool-edit-here] .l-btn *,
+[cool-edit-here] .l-btn{
+    fill: #000;
+    stroke:#000;
+}

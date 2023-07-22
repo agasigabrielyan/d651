@@ -1,0 +1,61 @@
+.informer{
+    background: linear-gradient(128deg, #e2f6ff 0%, #e2f6ff 82.76%);
+}
+.informer-list-item span {
+    color: #919191;
+}
+.informer-header a {
+    color: #1F4E79;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.informer-list-item{
+    border-radius: 5px;
+    box-shadow: 0 1px 4px #363636, -23px 0 20px -23px rgb(0 0 0 / 80%), 23px 0 20px -23px rgb(0 0 0 / 80%), 0 0 40px rgb(0 0 0 / 10%) inset;
+    font-weight: 300;
+    background-size: cover;
+}
+
+.toggleCompactView .item {
+    color: #137fc4!important;
+    text-shadow: 0px 0px #e2f6ff!important;
+}
+
+.toggleCompactView .item.active {
+    cursor: default;
+    border-bottom: 1px solid #7ab3e9!important;
+}
+.informer-list-item p, .informer-list-item .description{
+    color: #000;
+    text-shadow: none;
+}
+.informer-list-item {
+    border: 2px solid #c0ecff;
+    background-color: #baeaff;
+    box-shadow: 0 1px 4px #919191, -23px 0 20px -23px rgb(0 0 0 / 80%), 23px 0 20px -23px rgb(0 0 0 / 80%), 0 0 40px rgb(0 0 0 / 10%) inset;
+}
+.informer-list-item.project {
+    background: #d6e2ff;
+}
+.informer-list-item.project .unit .count {
+    /*color: #33d137;*/
+}
+.informer-list-item.project .unit {
+    color: #4a4545;
+}
+.informer-list-item.project .right-bottom-triangle a {
+    color: #5c5c5c;
+}
+
+.light-menu li:hover svg, .light-menu li.active svg{
+    fill: rgb(112, 105, 105);
+}
+.targets .project .unit .count {
+    color: #8782ad;
+}
+.targets .project {
+    background: #80bced;
+}

@@ -1,0 +1,31 @@
+.entity-users-permission{
+    margin-top: ;
+}
+
+.entity-users-permission select{
+    max-width: 100%;
+    text-align: initial;
+}
+
+.entity-users-permission-render .ui-tag-selector-outer-container{
+    width: fit-content;
+    width: -webkit-fit-content;
+    display: table-cell;
+}
+
+.ui-selector-tab-icon{
+    background-size: contain;
+}
+
+.ui-selector-tab-label-active,
+.ui-selector-tab-label-active.ui-selector-tab-label-hover{
+    background-color: #585858;
+}
+
+.table-data.name .entity-caption{
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 5px;
+    /*font-weight: 600;*/
+}

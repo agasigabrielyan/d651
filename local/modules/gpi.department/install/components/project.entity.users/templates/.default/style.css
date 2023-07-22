@@ -1,0 +1,10 @@
+
+.main-grid-disable #grid_add_button{
+    pointer-events: all!important;
+    cursor: pointer!important;
+    opacity: 1!important;
+}
+
+.ui-selector-tab-icon{
+    background-size: contain;
+}

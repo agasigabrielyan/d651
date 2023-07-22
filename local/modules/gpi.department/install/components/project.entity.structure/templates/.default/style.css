@@ -1,0 +1,170 @@
+.group-direction-list .direction{
+    margin-top: 25px;
+    overflow:hidden;
+}
+
+.direction .dir-name{
+    color:#5070a7!important;
+    font-size: 25px!important;
+    font-family: 'Oswald';
+}
+
+.direction .group-name{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 8px 0;
+}
+
+
+.direction .group-name a{
+    color: #000000!important;
+    font-size: 23px!important;
+    font-family: 'Oswald' !important;
+    text-decoration: none;
+}
+
+.direction .group-users.ui-table .table-row{
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.direction .group-users.ui-table .table-row .table-coll{
+    border-right: 1px solid #d8d8d8;
+}
+
+.direction .group-users.ui-table .table-row .table-coll,
+.direction .group-users.ui-table .table-row .fio {
+    color: #494a4c!important;
+    font-size: 16px!important;
+    font-family: helvetica!important;
+}
+
+.direction .group-users.ui-table .table-row .fio{
+    width: -moz-fit-content;
+    width: fit-content;
+    position:relative;
+}
+
+.direction .group-users.ui-table .table-row .fio.new::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #5dd761;
+    border-radius: 50%;
+    left: -21px;
+    top: 9px;
+}
+
+.group-direction-list .direction-groups{
+    margin-left: 50px;
+}
+
+.group-direction-list .group-users{
+    max-height: 1000px;
+    transition-duration: 0.6s;
+    border: 1px solid #cceafd;
+}
+
+.group-direction-list .group-users .row{
+    background: #fff;
+    padding: 3.5px 5px;
+    padding-left: 0px;
+}
+
+.direction .group-name{
+    position: relative;
+}
+
+.direction .group-name .swiper {
+    border: 3px solid #383838;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: -19px;
+    top: 10px;
+    content: '';
+    border-left: 0;
+    border-top: 0;
+    transform: rotate(45deg);
+    transition-duration: 0.6s;
+}
+
+.direction .group-name.new::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #5dd761;
+    border-radius: 50%;
+    left: -40px;
+    top: 13px;
+}
+
+.direction-group.hide .group-name .swiper {
+    transform: rotate(225deg);
+    top: 15px;
+}
+
+.direction-group.hide .group-users{
+    max-height: 0px;
+}
+
+.direction .group-name .actions{
+    opacity: 0!important;
+    right: -74px;
+    top: 4px;
+}
+
+.direction .group-name:hover .actions{
+    opacity: 1!important;
+}
+
+.direction .group-users .actions{
+    opacity: 0!important;
+    right: -75px;
+    top: 0px;
+}
+.direction .group-users .fio{
+    position: relative;
+}
+
+.direction .group-users .fio:hover .actions{
+    opacity: 1!important;
+}
+
+.direction-groups .actions svg {
+    width: 22px;
+    height: 19px;
+}
+
+.direction .actions>div {
+    padding: 2px;
+    background: #9fd0f1;
+    border-radius: 4px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.direction .actions {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    gap: 8px;
+    display: flex;
+    opacity: 0;
+    transition-duration: 0.5s;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.group-direction-list .group-users .row .table-coll{
+    border-right: 1px solid #d8d8d8;
+    padding-left: 15px;
+}
+
+.group-direction-list .group-users .row .table-coll:last-child {
+    border-right: none;
+    padding-left: none;
+}
